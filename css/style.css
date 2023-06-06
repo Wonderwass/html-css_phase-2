@@ -1,0 +1,500 @@
+/* body{
+   font-family:sans-serif;
+}
+header{
+    background-color: #2d3e50;
+    display: flex;
+    justify-content: space-evenly;
+    height: 175px;
+  
+}
+li{
+    display: inline-block;
+}
+h1{
+    color: #2182bf;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+   
+}
+nav{
+    background-color: #2182bf;
+   
+    
+}
+#logo{
+    
+} */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-image: url(../img/concrete-texture.png);
+  /*Effet de scroll lorsqu'on clique sur une ancre mais ne marche que sur FireFox ou pas du tout
+    scroll-behavior: smooth;*/
+}
+h1 {
+  font-size: 45px;
+  font-family: "Anton", sans-serif;
+  color: #2980b9;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 35px;
+  color: #2c3e50;
+  padding: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+}
+h3 {
+  font-size: 22px;
+  color: #2c3e50;
+  padding: 15px;
+  text-shadow: 1px 1px 2px #aaa;
+}
+h4 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/**************HEADER INDEX****************/
+header {
+  background: #2c3e50;
+  height: 175px;
+}
+#logo {
+  float: left;
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+}
+#slogan {
+  float: left;
+  width: 50%;
+  padding-top: 50px;
+}
+#social {
+  float: left;
+  width: 25%;
+}
+#social i {
+  font-size: 30px;
+  text-align: right;
+  padding: 15px 30px 0 0;
+  display: block;
+}
+header a {
+  color: #2980b9;
+  text-decoration: none;
+}
+/*******************FIN HEADER*********************/
+
+/**************DEBUT NAV********************/
+nav {
+  background: #2980b9;
+  height: 70px;
+  border-bottom: 8px solid #6acafc;
+  text-align: center;
+  padding: 15px;
+}
+nav a {
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  border: 2px solid white;
+  background: #6acafc;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: oswald;
+  transition: 0.5s;
+}
+nav a:hover {
+  /* HOVER pour survolrt avec le click , ont peut jouer sur les taille, et couleur  */
+  background: #a6d6c3;
+  color: white;
+}
+.activ {
+  background: #2c3e50;
+  color: white;
+}
+/**************FIN NAV********************/
+/*FAIRE LE ZONING AVEC DES HAUTEUR ET LARGEUR AVANT DE PLACER LES ELEMENTS DANS LES ZONES POUR ENSUITE SUPPRIMER LES HAUTEURS*/
+main {
+  background: rgba(178, 178, 178, 0.3);
+  width: 1000px;
+  margin: 0 auto;
+}
+aside {
+  height: 250px;
+  background: #a6d6c3;
+}
+section {
+  margin-top: 50px;
+  /*    background: #DAF7A6;*/
+  padding: 20px;
+}
+li {
+  display: inline-block;
+}
+footer {
+  background: #2980b9;
+  height: 30px;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+/* zoning1 */
+.container {
+  width: 80%;
+  /* pour centrer */
+  margin: auto;
+  /* pour centrer le texte au milieu */
+  text-align: center;
+}
+.zoneh {
+  background-color: rgb(127, 137, 212);
+  height: 80px;
+}
+.zoneg {
+  background-color: #6ef9e6;
+  /* largeur */
+  width: 25%;
+  height: 100%;
+  /* hauteur */
+}
+.zoned {
+  background-color: #5e96da9b;
+  width: 75%;
+  height: 100%;
+}
+.flex {
+  display: flex;
+  height: 500px;
+}
+/* Zoning2 */
+
+.container2 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.Zoneheader {
+  height: 80px;
+  background-color: #f8f5e4;
+}
+.ZoneasideG {
+  background-color: #10828c;
+  width: 20%;
+  height: 100%;
+}
+.Zonemilieu {
+  background-color: #0d3046;
+  width: 60%;
+  height: 100%;
+}
+.ZoneasideD {
+  background-color: #10828c;
+  width: 20%;
+  height: 100%;
+}
+.flex2 {
+  display: flex;
+  height: 600px;
+}
+/* Zoning3 */
+
+.zoning3 {
+  width: 70%;
+  margin: auto;
+}
+.container3 {
+  margin: auto;
+  text-align: center;
+}
+.droite {
+  width: 50%;
+  height: 100%;
+  background-color: #215d67;
+}
+.gauche {
+  width: 50%;
+  height: 100%;
+  background-color: #659968;
+}
+.bas {
+  height: 60px;
+  background-color: #f4fde2;
+  text-align: center;
+}
+.flex3 {
+  display: flex;
+  height: 500px;
+}
+
+/* Zoning4 */
+.zoning4 {
+  height: 500px;
+}
+.container4 {
+  margin: auto;
+  border: 2px solid black;
+  text-align: center;
+  width: 75%;
+}
+.header4 {
+  background-color: #d7dfe2;
+  height: 80px;
+}
+.nav4 {
+  height: 50px;
+  width: 100%;
+  background-color: #71adb5;
+}
+.section4 {
+  border: 15px solid white;
+  background-color: #176e82;
+  margin: auto;
+  height: 300px;
+}
+
+.trait {
+  height: 10px;
+  background-color: #6bcbfd;
+}
+.footer4 {
+  height: 60px;
+  background-color: #0d3346;
+}
+
+/* Zoning5 */
+.container5 {
+  margin: auto;
+  border: 2px solid black;
+  text-align: center;
+}
+.headerjaune {
+  color: white;
+  background-color: #f8d770;
+  height: 70px;
+}
+.nav5 {
+  color: white;
+  background-color: #d7bc6b;
+  height: 30px;
+}
+.trait5 {
+  background-color: #b99625;
+  height: 10px;
+}
+.zone1 {
+  background-color: #d2b766;
+  height: 200px;
+  width: 50%;
+}
+.zone2 {
+  background-color: #fce389;
+  height: 200px;
+  width: 50%;
+}
+.zone3 {
+  background-color: #fce389;
+  height: 200px;
+  width: 50%;
+}
+.zone4 {
+  background-color: #d7bc6b;
+  height: 200px;
+  width: 50%;
+}
+.footer5 {
+  background-color: #f8d770;
+  height: 50px;
+}
+.flex5 {
+  background-color: #ffa500;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Zoning6 */
+
+.container6 {
+margin: auto;
+text-align: center;
+width: 80%;
+color: white;
+}
+.flex6{
+    display: flex;
+}
+.flex7{
+    display:flex;
+}
+.flex8{
+    display: flex;
+    width: 100%;
+    
+}
+.flex9{
+    display:flex;
+}
+.ht1 {
+  background-color:#223462  ;
+  width: 20%;
+  height: 150px;
+}
+.ht2 {
+  background-color:#3e578f ;
+  width: 60%;
+  height:150px ;
+}
+.ht3 {
+  background-color:#223462 ;
+  width: 20%;
+  height: 150px;
+}
+.Menu6 {
+  background-color:#0b5268 ;
+}
+.ZoneG6 {
+  background-color: #446878 ;
+  width: 100%;
+  height: 100%;
+}
+
+.width-100{
+    width: 100%;
+}
+.A {
+  background-color:#c0c4cd ;
+  width: 50%;
+  height: 250px;
+}
+.B {
+  background-color:#223462  ;
+    width: 50%;
+  height: 250px;
+  
+}
+.SS {
+  background-color: #314a51;
+  width: 100%;
+  height: 250px;
+}
+.C {
+  background-color:#c0c4cd ;
+  width: 25%;
+  height: 100px;
+}
+.D {
+  background-color:#223462  ;
+   width: 25%;
+   height: 100px;
+}
+.E {
+  background-color:#c0c4cd ;
+   width: 25%;
+   height: 100px;
+}
+.F {
+  background-color:#223462  ;
+   width: 25%;
+   height: 100px;
+  
+}
+.bas6 {
+  background-color:#0b5268 ;
+
+}
